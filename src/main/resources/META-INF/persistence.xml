@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd"
+             version="3.0">
+    <persistence-unit name="culture_clothing">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <!-- user -->
+        <class>com.culture.model.users.beans.Users</class>
+        <class>com.culture.model.users.beans.UsersData</class>
+
+        <!-- product -->
+        <class>com.culture.model.products.beans.Brand</class>
+        <class>com.culture.model.products.beans.Category</class>
+        <class>com.culture.model.products.beans.SingleImage</class>
+        <class>com.culture.model.products.beans.Product</class>
+
+        <!-- payment -->
+        <class>com.culture.model.payment.beans.Provider</class>
+        <class>com.culture.model.payment.beans.PaymentType</class>
+        <class>com.culture.model.payment.beans.Payment</class>
+
+        <!-- orders -->
+        <class>com.culture.model.orders.beans.DeliveryType</class>
+        <class>com.culture.model.orders.beans.StatusType</class>
+        <class>com.culture.model.orders.beans.Country</class>
+        <class>com.culture.model.orders.beans.Address</class>
+        <class>com.culture.model.orders.beans.Order</class>
+        <class>com.culture.model.orders.beans.OrderItem</class>
+
+
+        <!-- persistence properties configuration -->
+        <properties>
+            <!-- jdbc driver -->
+            <property name="jakarta.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/culture_clothing"/>
+            <property name="jakarta.persistence.jdbc.user" value="root"/>
+            <property name="jakarta.persistence.jdbc.password" value="43yEr_95eAS2002"/>
+
+            <!-- other properties -->
+            <property name="hibernate.show_sql" value = "false" />
+            <property name="hibernate.format_sql" value = "true" />
+
+        </properties>
+    </persistence-unit>
+</persistence>

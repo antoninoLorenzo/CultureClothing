@@ -1,0 +1,4 @@
+#cookie-policy-dialog::backdrop {  
+    background: linear-gradient(rgb(101, 101, 101, 0.1), rgb(101, 101, 101, 0.2));
+    backdrop-filter: blur(2px);
+}

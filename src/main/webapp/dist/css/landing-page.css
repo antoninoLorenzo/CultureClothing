@@ -1,0 +1,43 @@
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 640px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 640px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 1024px) {}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1280px) {}
+
+/*#navbar-mobile-menu { display: none;}*/
+#ld-gender-card-man { 
+    background-image: url("images/landing-page/webp/shop_men.webp");
+    background-size: 115% 115%;
+}
+#ld-gender-card-man:hover { 
+    transition: 0.15s;
+    background-size: 100% 100%;
+}
+#ld-gender-card-woman { 
+    background-image: url("images/landing-page/webp/shop_women.webp");
+    background-size: 115% 115%;
+}
+#ld-gender-card-woman:hover { 
+    transition: 0.15s;
+    background-size: 100% 100%;
+}
+
+#cookie-policy-cookie-banner {
+    text-decoration: underline;
+    text-decoration-color: var(--secondary);
+    cursor: pointer !important;
+}
+
+#cookie-policy-cookie-banner:hover {
+    transition: 0.15s;
+    opacity: 0.8;
+}

@@ -1,0 +1,15 @@
+{
+  "name": "culture_clothing",
+  "version": "1.0.0",
+  "description": "Streetwear website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css": "tailwindcss build -i tailwindsrc/input.css -o dist/css/output.css"
+  },
+  "author": "Antonino Lorenzo",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.3.2"
+  }
+}

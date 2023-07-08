@@ -1,0 +1,97 @@
+:root {
+    --primary: #FFFFFC;
+    --secondary: #181818;
+    --gray-shade: #656565;
+    --white-shade: #e0e0de;
+    --error: #DB2B39;
+}
+
+/* select-none instead of unselectable and pointer-events-none */
+.unselectable {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.pointer-event-none {
+    pointer-events: none;
+}
+
+.raleway-100 {
+    font-family: 'Raleway', sans-serif;
+    src: url('../css/fonts/Raleway-Thin.ttf');
+    font-weight: 100;
+}
+
+.raleway-200 {
+    font-family: 'Raleway', sans-serif;
+    src: url('../css/fonts/Raleway-ExtraLight.ttf');
+    font-weight: 200;
+}
+
+.raleway-300 {
+    font-family: 'Raleway', sans-serif;
+    src: url('../css/fonts/Raleway-Light.ttf');
+    font-weight: 300;
+}
+
+.raleway-400 {
+    font-family: 'Raleway', sans-serif;
+    src: url('../css/fonts/Raleway-Regular.ttf');
+    font-weight: 400;
+}
+
+.raleway-500 {
+    font-family: 'Raleway', sans-serif;
+    src: url('../css/fonts/Raleway-Medium.ttf');
+    font-weight: 500;
+}
+
+.raleway-600 {
+    font-family: 'Raleway', sans-serif;
+    src: url('../css/fonts/Raleway-SemiBold.ttf');
+    font-weight: 600;
+}
+
+.raleway-700 {
+    font-family: 'Raleway', sans-serif;
+    src: url('../css/fonts/Raleway-Bold.ttf');
+    font-weight: 700;
+}
+
+/*  NAVBAR  */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 640px) {
+    #navbar-desktop-container { display: none;}
+    #navbar-mobile-container { display: block;}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 640px) {
+    #navbar-desktop-container { display: block;}
+    #navbar-mobile-container { display: none;}
+}
+
+#nv-dsk-links li {
+    margin-top: 0 !important;
+}
+
+#navbar-mobile-menu { display: none;}
+#mb-expanded-man { display: none;}
+#mb-expanded-woman { display: none;}
+
+#dsk-man-link:hover #dsk-man-dropdown{
+    display: flex;
+}
+
+#dsk-woman-link:hover #dsk-woman-dropdown{
+    display: flex;
+}
+
+
+/*  FOOTER  */
+#expanded-legal-info { display: none;}
+#expanded-contact-info { display: none;}
+#expanded-payment-info { display: none;}
